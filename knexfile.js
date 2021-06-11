@@ -3,13 +3,16 @@ module.exports = {
       client: 'sqlite3',
       useNullAsDefault: true, // needed for sqlite
       connection: {
-        filename: './data/recipes.db3',
+        filename: './data/cook_book.db3',
       },
       migrations: {
         directory: './data/migrations'
       },
       seeds: {
         directory: './data/seeds'
+      },
+      testing: {
+        directory: './data/cook_book.test.db3'
       },
       pool: { // needed to enable foreign keys in sqlite
         afterCreate: (conn, done) => {
