@@ -9,7 +9,7 @@ module.exports = {
         directory: './data/migrations'
       },
       seeds: {
-        directory: './data/seeds'
+        directory: './data/seed'
       },
       testing: {
         directory: './data/cook_book.test.db3'
